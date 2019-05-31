@@ -64,6 +64,7 @@ add declaration in memory_data_layer.hpp
 3.re-construct the slices of output feature map into 3d raw data
 
 4.compile the extract_features.cpp and invoke the exe
+
                         "This program takes in a trained network and an input data layer, and then"
 			" extract features of the input data produced by the net.\n"
 			"Usage: extract_features  input_image_names pretrained_net_param"

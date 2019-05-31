@@ -1,7 +1,7 @@
 # extract_features.cpp
 extract features for U-Net using C++, modified codes based on extract_features.cpp
 1. read a volume of 3d raw data
-
+   
 2. put the data array into memory_data_layer
 add a new function AddRawData in memory_data_layer.cpp 
 
@@ -63,3 +63,15 @@ add declaration in memory_data_layer.hpp
 
 3.re-construct the slices of output feature map into 3d raw data
 
+4.compile the extract_features.cpp and invoke the exe
+                        "This program takes in a trained network and an input data layer, and then"
+			" extract features of the input data produced by the net.\n"
+			"Usage: extract_features  input_image_names pretrained_net_param"
+			"  feature_extraction_proto_file  extract_feature_blob_name1[,name2,...]"
+			"  save_feature_dataset_name1[,name2,...]  num_mini_batches  input image path"
+			"  [CPU/GPU] [DEVICE_ID=0]\n"
+			"Note: you can extract multiple features in one pass by specifying"
+			" multiple feature blob names and dataset names separated by ','."
+			" The names cannot contain white space characters and the number of blobs"
+			" and datasets must be equal.";
+			
